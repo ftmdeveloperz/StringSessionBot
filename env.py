@@ -3,10 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = os.getenv("API_ID", "").strip()
-API_HASH = os.getenv("API_HASH", "").strip()
-BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
-DATABASE_URL = os.getenv("DATABASE_URL", "").strip() # Not a necessary variable anymore but you can add to get stats
+# Provided credentials
+API_ID = "28776072"
+API_HASH = "b3a786dce1f4e7d56674b7cadfde3c9d"
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7515672383:AAEY-hBw4OGwUiIsDJ3qWfc1ZJMPHmV9C-4").strip()  # Add your bot token here
+DATABASE_URL = os.getenv("DATABASE_URL", "").strip()  # Optional variable for database URL
 MUST_JOIN = os.getenv("MUST_JOIN", "")
 
 if not API_ID:
@@ -15,11 +16,6 @@ elif not API_HASH:
     raise SystemExit("No API_HASH found. Exiting...")
 elif not BOT_TOKEN:
     raise SystemExit("No BOT_TOKEN found. Exiting...")
-'''
-if not DATABASE_URL:
-    print("No DATABASE_URL found. Exiting...")
-    raise SystemExit
-'''
 
 try:
     API_ID = int(API_ID)
