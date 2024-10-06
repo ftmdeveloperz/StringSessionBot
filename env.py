@@ -8,7 +8,7 @@ API_ID = "28776072"
 API_HASH = "b3a786dce1f4e7d56674b7cadfde3c9d"
 BOT_TOKEN = os.getenv("BOT_TOKEN", "7515672383:AAEY-hBw4OGwUiIsDJ3qWfc1ZJMPHmV9C-4").strip()  # Add your bot token here
 DATABASE_URL = os.getenv("DATABASE_URL", "").strip()  # Optional variable for database URL
-MUST_JOIN = os.getenv("MUST_JOIN", "")
+MUST_JOIN = os.getenv("MUST_JOIN", "-1002160186636")
 
 if not API_ID:
     raise SystemExit("No API_ID found. Exiting...")
